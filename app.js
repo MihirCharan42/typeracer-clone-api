@@ -163,4 +163,7 @@ server.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
 
+server.getConnections("/", (req,res) => {
+    res.send("Hello");
+});
                 
